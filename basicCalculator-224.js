@@ -36,14 +36,14 @@ function calculate(s) {
         }else if(trimmed[i] === ')') {
             result += num * sign;
             // console.log("result", result);
-            // result *= stack.slice(-1)[0];
-            // stack.pop();
-            result *= stack.pop();
+            result *= stack.slice(-1)[0];
+            stack.pop();
+            // result *= stack.pop();
             // console.log("stack1", stack);
             // console.log("result1", result);
-            // result += stack.slice(-1)[0];
-            // stack.pop();
-            result += stack.pop();
+            result += stack.slice(-1)[0];
+            stack.pop();
+            // result += stack.pop();
             // console.log("stack2", stack);
             //  console.log("result2", result);
             num = 0;
