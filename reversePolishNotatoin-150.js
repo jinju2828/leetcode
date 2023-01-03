@@ -31,5 +31,6 @@ function evalRPN(token) {
         }
         console.log(stack);
     }
-    return res;
+    // return res;
+    return stack[0];
 }
