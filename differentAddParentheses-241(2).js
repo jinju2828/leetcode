@@ -3,6 +3,9 @@
  * @return {number[]}
  */
 
+//Dynamic Programming, Memoization
+    //The Idea is to store already calculated result so you don't need to re calculate
+
 const op = {
     '+': (a,b) => (+a) + (+b),
     '-': (a,b) => a-b,
