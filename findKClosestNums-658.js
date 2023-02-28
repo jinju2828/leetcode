@@ -12,3 +12,5 @@ function findClosestElements(arr, k, x) {
     }
     return arr.slice(leftPointer, leftPointer + k);
 }
+
+console.log('test');
