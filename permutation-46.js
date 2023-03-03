@@ -16,3 +16,16 @@ let permute = function (nums, arr = [], res = []) {
 
     return res;
 }
+
+let permute2 = function(nums, arr = [], res = []) {
+    if(nums.length === 0) res.push([...arr]);
+    
+    for(let i = 0; i<nums.length; i++) {
+        let rest = nums.filter((n,index)=>index!==i);
+        arr.push(nums[i]);
+        permute2(rest,arr,res);
+        arr.pop();
+    }
+
+    return res;
+}
